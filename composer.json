@@ -1,0 +1,27 @@
+{
+    "name": "mkurc1/wallet-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "Symfony WalletBundle",
+    "homepage": "http://bitapp.pl",
+    "keywords": [
+        "symfony",
+        "wallet",
+        "money"
+    ],
+    "authors": [
+        {
+            "name": "Michał Kurcewicz",
+            "email": "mkurc1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WalletBundle\\": ""
+        }
+    },
+    "require": {
+        "php": ">=5.3.9",
+        "doctrine/orm": "^2.4.8"
+    }
+}

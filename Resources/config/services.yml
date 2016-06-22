@@ -1,0 +1,10 @@
+parameters:
+    wallet.transaction.class: 'WalletBundle\Service\Transaction'
+
+services:
+    wallet.classes.wallet_history:
+        class: '%wallet.classes.wallet_history%'
+
+    wallet.transaction:
+        class: '%wallet.transaction.class%'
+        arguments: ['@doctrine.orm.entity_manager', '@wallet.classes.wallet_history']
