@@ -5,7 +5,7 @@ namespace WalletBundle\Entity;
 interface WalletHistoryInterface
 {
     const TYPE_INCOME = 1;
-    const TYPE_PAYMENT = 2;
+    const TYPE_SALARY = 2;
     const TYPE_RECLAMATION = 3;
 
     /**

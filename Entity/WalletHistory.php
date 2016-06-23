@@ -63,7 +63,7 @@ abstract class WalletHistory implements WalletHistoryInterface
     {
         $types = [
             WalletHistoryInterface::TYPE_INCOME,
-            WalletHistoryInterface::TYPE_PAYMENT,
+            WalletHistoryInterface::TYPE_SALARY,
             WalletHistoryInterface::TYPE_RECLAMATION
         ];
 

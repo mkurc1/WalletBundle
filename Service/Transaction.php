@@ -61,7 +61,7 @@ class Transaction implements TransactionInterface
         $this->em->getConnection()->beginTransaction();
         try {
             $wallet->setTotalAmount($wallet->getTotalAmount() - $amount);
-            $this->addWalletHistory($wallet, WalletHistoryInterface::TYPE_PAYMENT, $amount, $name, $description, $data);
+            $this->addWalletHistory($wallet, WalletHistoryInterface::TYPE_SALARY, $amount, $name, $description, $data);
 
             $this->em->flush();
             $this->em->getConnection()->commit();

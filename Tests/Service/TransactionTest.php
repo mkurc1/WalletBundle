@@ -127,7 +127,7 @@ class TransactionTest extends KernelTestCase
 
         $lastTransaction = $wallet->getLastTransaction();
         $this->assertNotNull($lastTransaction);
-        $this->assertEquals(WalletHistoryInterface::TYPE_PAYMENT, $lastTransaction->getType());
+        $this->assertEquals(WalletHistoryInterface::TYPE_SALARY, $lastTransaction->getType());
         $this->assertEquals('bar', $lastTransaction->getName());
         $this->assertEquals(400, $lastTransaction->getAmount());
     }
@@ -163,7 +163,7 @@ class TransactionTest extends KernelTestCase
 
         $lastTransaction = $wallet->getLastTransaction();
         $this->assertNotNull($lastTransaction);
-        $this->assertEquals(WalletHistoryInterface::TYPE_PAYMENT, $lastTransaction->getType());
+        $this->assertEquals(WalletHistoryInterface::TYPE_SALARY, $lastTransaction->getType());
         $this->assertEquals('foobar', $lastTransaction->getName());
         $this->assertEquals(400, $lastTransaction->getAmount());
     }
