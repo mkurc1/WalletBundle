@@ -51,7 +51,7 @@ Create your Wallet class:
          * @var ArrayCollection
          *
          * @ORM\OneToMany(targetEntity="AppBundle\Entity\WalletHistory", mappedBy="wallet", cascade={"persist"}, orphanRemoval=true)
-         * @ORM\OrderBy(value={"createdAt"})
+         * @ORM\OrderBy({"createdAt"="DESC"})
          */
         protected $histories;
     
