@@ -2,6 +2,8 @@
 
 The bundle added wallet into Users and allow to managed it. This bundle is for [Symfony](http://symfony.com/) Framework.
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/2e67737a-4442-4ea7-aff5-f22140427c45/big.png)](https://insight.sensiolabs.com/projects/2e67737a-4442-4ea7-aff5-f22140427c45)
+
 ## Configure
 
 Require the bundle with composer:
