@@ -43,6 +43,7 @@ class Transaction implements TransactionInterface
             $this->em->getConnection()->commit();
         } catch (\Exception $e) {
             $this->em->getConnection()->rollBack();
+            $this->em->close();
             throw $e;
         }
     }
@@ -67,6 +68,7 @@ class Transaction implements TransactionInterface
             $this->em->getConnection()->commit();
         } catch (\Exception $e) {
             $this->em->getConnection()->rollBack();
+            $this->em->close();
             throw $e;
         }
     }
@@ -87,6 +89,7 @@ class Transaction implements TransactionInterface
             $this->em->getConnection()->commit();
         } catch (\Exception $e) {
             $this->em->getConnection()->rollBack();
+            $this->em->close();
             throw $e;
         }
     }
@@ -115,6 +118,7 @@ class Transaction implements TransactionInterface
             $this->em->getConnection()->commit();
         } catch (\Exception $e) {
             $this->em->getConnection()->rollBack();
+            $this->em->close();
             throw $e;
         }
     }
