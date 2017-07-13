@@ -141,6 +141,13 @@ Implement WalletBundle\Entity\UserWalletInterface on User entity:
             $this->wallet = $wallet;
             return $this;
         }
+        
+        public function __construct()
+        {
+            parent::__construct($type);
+            $this->wallet = new Wallet();
+            // your own logic
+        }
     }
     
 Configure your application:
